@@ -17,7 +17,30 @@ module.exports = {
       test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      }
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: DIST_DIR + '/img',
+              publicPath: DIST_DIR + '/img',
+              disable: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(ogg|mp4|wav|mpe?g)$/i,
+        use: 'file-loader'
+      },
     ]
   },
   mode: 'development',
@@ -29,7 +52,7 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      { from: 'src/index.html', to: '../index.html' }
+      { from: 'src/index.html', to: '../index.html' },
     ],)
   ]
 };
