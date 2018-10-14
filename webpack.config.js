@@ -19,19 +19,10 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: DIST_DIR + '/img',
-              publicPath: DIST_DIR + '/img',
-              disable: true,
-            },
-          },
-        ],
+          test: /\.(png|svg|jpg|gif)$/,
+          use: [
+            'file-loader'
+          ]
       },
       {
         test: /\.css$/,
