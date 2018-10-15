@@ -1,13 +1,14 @@
 {
   "name": "joe",
   "version": "1.0.0",
-  "description": "",
+  "repository": "https://github.com/mpoe/Joe",
+  "description": "quick project",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "start:dev": "npm run build && webpack-dev-server"
   },
-  "author": "",
+  "author": "mpoe",
   "license": "ISC",
   "dependencies": {
     "extract-loader": "^3.0.0",

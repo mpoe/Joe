@@ -20,3 +20,34 @@
 .feature:hover{
     background-size: 241%;
 }
+
+.featureBtn{
+    font-weight: bold;
+    border: 3px solid white;
+    padding: 0 40px;
+    font-size: 17px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.4s;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    /* flex: 1; */
+}
+
+.featureBtn:hover{
+    background-color: pink;
+    color: black;
+}
+
+.featureTitle{
+    font-size: 2.22em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.featureContainer{
+    max-width: 85%;
+    flex-direction: column;
+    align-items: center;
+}
