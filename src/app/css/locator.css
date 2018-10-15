@@ -2,3 +2,34 @@
     width: 100%;
     height: 100%;
 }
+
+.locatorBtn{
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    padding: 0 40px;
+    font-size: 17px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.4s;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    /* flex: 1; */
+}
+
+.locatorBtn:hover{
+    background-color: pink;
+    color: black;
+}
+
+.locatorTitle{
+    font-size: 2.22em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.locatorContainer{
+    flex-direction: column;
+    align-items: center;
+}
