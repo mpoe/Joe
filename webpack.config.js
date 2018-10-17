@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: DIST_DIR + '/app',
     filename: 'bundle.js',
-    publicPath: '/app',
+    publicPath: '/app/',
   },
   module: {
     rules: [{
@@ -44,6 +44,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       { from: 'src/index.html', to: '../index.html' },
+      { from: 'src/server.js', to: '../server.js' },
     ],)
   ]
 };
